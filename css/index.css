@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cabin Condensed', sans-serif;
+}
+
+:root{
+    --clr-primary-dark: #020202;
+    --clr-secondary-darkGray: rgb(25, 25, 25);
+    --clr-white-Primary: #f2f2f2;
+    --clr-secondary-white: #7f7e7e;
+}
+body{
+    background: var(--clr-primary-dark);
+}
+.mainUppersection{
+        background: var(--clr-secondary-darkGray);
+            /* box-shadow: 0 0 20px rgb(34, 33, 33); */
+        position: fixed;
+        left: 0;
+        right: 0;
+}
+.upperSection{
+    color: var(--clr-white-Primary);
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+.logoHeadre{
+    font-size: 1.5rem;
+}
+.upperSection ul{
+    display: flex;
+    list-style-type: none;
+}
+.upperSection ul li{
+    padding: 15px;
+}
+.upperSection ul li i{
+    font-size: 18px;
+}
+.menuInfoMore{
+    background:var(--clr-secondary-darkGray);
+    width: 200px;
+    border-radius: 10px;
+    padding: 10px;
+    position: absolute;
+    right: 0;
+    /* left: 40vh; */
+    /* bottom: 60vh; */
+    color: var(--clr-white-Primary);
+    box-shadow: 0 0 10px var(--clr-primary-dark);
+    display: none;
+    animation-name: navAnime;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    transition: all .5s ease-in;
+}
+@keyframes navAnime {
+    0%{
+   transform: scale(0);
+    }
+    50%, 100%{
+        transform: scale(1.0, 1.0);
+    }
+}
+.menuInfoMore ul{
+    list-style-type: none;
+}
+.menuInfoMore ul li{
+    padding: 10px;
+}
+.nav-tabs{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 15px;
+    color: var(--clr-secondary-white);
+}
+.nav-tabs i{
+    font-size: 20px;
+}
+.nav-tabs p{
+    font-size: 12px;
+    margin: 10px 0;
+}
+/* CHATS */
+#AllChats{
+    /* background: yellow; */
+    position: relative;
+    top: 150px;
+    display: grid;
+    grid-template-rows: repeat(1, 1fr auto);
+    z-index: -1;
+}
+.person1{
+    color: var(--clr-white-Primary);
+}
+.profile1{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 10px;
+}
+.profile1:hover{
+    background: var(--clr-secondary-darkGray);
+}
+.person1 a{
+    color: var(--clr-white-Primary);
+    text-decoration: none;
+}
+.namePerson{
+    font-size: 1.2rem;
+    position: relative;
+    left: 10px;
+    bottom: 20px;
+}
+.profileImg{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}

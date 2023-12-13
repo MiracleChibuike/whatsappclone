@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cabin Condensed', sans-serif;
+}
+:root {
+    --clr-primary-dark: #020202;
+    --clr-secondary-darkGray: rgb(25, 25, 25);
+    --clr-white-Primary: #f2f2f2;
+    --clr-secondary-white: #7f7e7e;
+    --clr-green: #025a3f;
+}
+.upInfo{
+    display: flex;
+    justify-content: space-between;
+    background: var(--clr-secondary-darkGray);
+    color: var(--clr-white-Primary);
+    padding: 10px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    /* height: 170px; */
+}
+.upInfo ul{
+    display: flex;
+    list-style-type: none;
+}
+.upInfo ul li{
+    padding: 10px;
+}
+.upInfo ul li i{
+    font-size: 18px;
+}
+.icons a{
+    color: var(--clr-white-Primary);
+    position: relative;
+    bottom: 20px;
+    margin: 0 5px;
+    left: -10px;
+}
+#leftArrowIcon{
+    font-size: 18px;
+}
+#profileLink1{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.firstpersonName{
+    font-size: 1.3rem;
+    position: relative;
+    left: 10px;
+    bottom: 15px;
+}
+.buttomMesageBox{
+    background: var(--clr-primary-dark);
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    color: var(--clr-white-Primary);
+    display: flex;
+    justify-content: space-between;
+    /* padding: 0 10px; */
+}
+#typeMessage{
+    width: 180vh;
+    height: 50px;
+    background: transparent;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    padding: 0 35px;
+    color: var(--clr-white-Primary);
+    font-size: 18px;
+    margin: 10px 0;
+    border: 1px solid var(--clr-green);
+}
+.mic{
+    margin: 10px 10px;
+}
+.chatDisplay{
+    background: url(../images/black.jpg) no-repeat center center/cover;
+    color: var(--clr-white-Primary);
+    position: relative;
+    top: 60px;
+    min-height: 150vh;
+    z-index: -1;
+
+}
+.fa-microphone{
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    background: var(--clr-green);
+    padding: 11px;
+    border-radius: 50%;
+}
+.fa-face-smile{
+    position: relative;
+    left: -179vh;
+}
+.fa-paper-plane{
+    font-size: 20px;
+        width: 40px;
+        height: 40px;
+        background: var(--clr-green);
+            padding: 10px;
+            border-radius: 50%;
+           
+}
+#send{
+   visibility: hidden;
+}
+.messagecontent{
+    background: var(--clr-green);
+    margin: 10px;
+    position: relative;
+    top: 20px;
+    bottom: 50px;
+    padding: 15px;
+    border-radius: 10px;
+    z-index: -1;
+}
+
+@media (min-width: 0px) and (max-width: 750px) {
+    #typeMessage{
+        width: 250px;
+    }
+        .fa-face-smile {
+            position: relative;
+            left: -240px;
+        }
+}

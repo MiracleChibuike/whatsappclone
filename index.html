@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp</title>
+    <!-- google fonts link -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Asap+Condensed&family=Cabin+Condensed&family=Dancing+Script&family=Jost&family=Kalam&family=Kanit&family=Noto+Sans+Display:wght@600&family=PT+Sans+Narrow&family=Slabo+27px&family=Ubuntu:wght@500&display=swap');
+    </style>
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body >
+    <!-- parent - container -->
+    <div class="parent">
+        <div class="mainUppersection" >
+                    <div class="upperSection">
+                        <div class="logo">
+                            <h1 class="logoHeadre">ChatMeApp</h1>
+                        </div>
+                        <ul>
+                            <li><i class="fa-solid fa-camera"></i></li>
+                            <li><i class="fa-solid fa-magnifying-glass"></i></li>
+                            <li><i class="fa-solid fa-ellipsis-vertical" id="menuToggleNav"></i></li>
+                        </ul>
+                    </div>
+                    <div class="menuInfoMore">
+                        <ul>
+                            <li>New Group</li>
+                            <li>New broadcast</li>
+                            <li>Linked devices</li>
+                            <li>Starred mesages</li>
+                            <li>Settings</li>
+                        </ul>
+                    </div>
+                <div class="nav-tabs" onclick="closemenus()">
+                    <!-- for community container -->
+                    <div class="community">
+                        <i class="fa-solid fa-users"></i>
+                        <p>Community</p>
+                    </div>
+                    <!-- for chats container -->
+                    <div class="chats">
+                        <i class="fa-solid fa-comment-dots"></i>
+                        <p>Chats</p>
+                    </div>
+                    <!-- for updates container -->
+                    <div class="update">
+                        <i class="fa-solid fa-arrows-rotate"></i>
+                        <p>Updates</p>
+                    </div>
+                    <!-- for calls container -->
+                    <div class="calls">
+                        <i class="fa-solid fa-phone-volume"></i>
+                        <p>Calls</p>
+                    </div>
+                </div>
+        </div>
+   <!-- Container For Chats -->
+   <section id="AllChats" onclick="closemenus()">
+        <div class="person1">
+            <a href="profile.html">
+                <div class="profile1">
+                    <div>
+                        <div>
+                            <img src="images/miracles image .jpg" alt="" class="profileImg">
+                            <span class="namePerson">Chibuike</span>
+                        </div>
+                        </h2>
+                    </div>
+                    <div class="time"><Small id ="CheckTime"></Small>2 days ago</div>
+                </div>
+            </a>
+        
+        </div>
+        <div class="person1">
+            <a href="profile.html">
+                <div class="profile1">
+                    <div>
+                        <div>
+                            <img src="images/miracles image .jpg" alt="" class="profileImg">
+                            <span class="namePerson">Sam</span>
+                        </div>
+                        </h2>
+                    </div>
+                    <div class="time"><Small id ="CheckTime"></Small>Yesterday</div>
+                </div>
+            </a>
+        
+        </div>
+        <!-- <div class="person1">
+            <a href="profile.html">
+                <div class="profile1">
+                    <div>
+                        <div>
+                            <img src="images/miracles image .jpg" alt="" class="profileImg">
+                            <span class="namePerson">Chibuike</span>
+                        </div>
+                        </h2>
+                    </div>
+                    <div class="time"><Small id="CheckTime"></Small>2 days ago</div>
+                </div>
+            </a>
+        
+        </div>
+        <div class="person1">
+            <a href="profile.html">
+                <div class="profile1">
+                    <div>
+                        <div>
+                            <img src="images/miracles image .jpg" alt="" class="profileImg">
+                            <span class="namePerson">Chibuike</span>
+                        </div>
+                        </h2>
+                    </div>
+                    <div class="time"><Small id="CheckTime"></Small>2 days ago</div>
+                </div>
+            </a>
+        
+        </div>
+     -->
+   </div>
+   </section>
+    </div>
+ 
+    
+
+
+    <!-- font awesome JS link -->
+    <script src="https://kit.fontawesome.com/9b5c4c6b23.js" crossorigin="anonymous"></script>
+    <!-- custom Js -->
+    <script src="js/index.js"></script>
+</body>
+</html>
