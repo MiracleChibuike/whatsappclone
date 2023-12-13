@@ -93,16 +93,16 @@ body{
     grid-template-rows: repeat(1, 1fr auto);
     z-index: -1;
 }
-.person1{
+.person1, .person3{
     color: var(--clr-white-Primary);
 }
-.profile1{
+.profile1, .profile3{
     display: flex;
     justify-content: space-between;
     margin: 10px;
     padding: 10px;
 }
-.profile1:hover{
+.profile1:hover, .profile3:hover{
     background: var(--clr-secondary-darkGray);
 }
 .person1 a{
