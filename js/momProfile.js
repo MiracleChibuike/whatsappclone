@@ -14,7 +14,18 @@ var current_date = date.getDate() + "/ " + (date.getMonth()+1) + " / " + date.ge
 var curent_time = date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
 var date_time = update.toDateString();
 showCurrentTime.textContent = date_time;
-// sendmsg.addEventListener("click", function () 
+// sendmsg.addEventListener("click", function () {
+//     alert(inputBox.value)
+// })
+
+// inputBox.addEventListener("click", function (params) {
+//     if (inputBox.value != 0) {
+//     console.log(sendmsg);
+//     sendmsg.style.visibility = "visible"
+// }else{
+//     alert("empty message cannot show button")
+// }
+// })
 function showBtn() {
     if (inputBox.value != 0) {
         sendmsg.style.visibility = "visible"
@@ -37,7 +48,3 @@ sendmsg.addEventListener("click", function (params) {
         inputBox.value = " "
     }
 })
-
-
-
- 
